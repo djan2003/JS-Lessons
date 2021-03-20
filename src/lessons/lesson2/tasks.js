@@ -52,7 +52,7 @@ counter = superMakeCounter()*/ // пытался обернуть еще одн�
 // задание 3
 function makeCounter2(a) {
     let i = a;
-    makeCounter2 = {}
+    makeCounter2 = {};
     makeCounter2.increase = function () {
         return ++i
     },
@@ -86,7 +86,14 @@ if(n===0){
 }
 else return n+sumTo(n-1)
 }
-
+// пример из learn.javascript.ru
+function pow(x, n) {
+    if (n == 1) {
+        return x;
+    } else {
+        return x * pow(x, n - 1);
+    }
+}
 
 
 
